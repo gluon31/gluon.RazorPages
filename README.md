@@ -1,2 +1,5 @@
 # gluon.RazorPages
-blog for test
+Blog template for learning
+
+## ASP.NET
+something
