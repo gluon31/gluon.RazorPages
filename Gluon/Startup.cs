@@ -14,6 +14,7 @@ namespace Gluon
     {
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddRazorPages();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -23,10 +24,15 @@ namespace Gluon
                 app.UseDeveloperExceptionPage();
             }
 
+            // Add Middleware: must come before UseRouting.
+            app.UseStaticFiles(); //Ã“IHTML, CSS, JS.... ‚ðŽÀs
+            // app.UseFileServer();
+
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapRazorPages();
                 endpoints.MapGet("/", async context =>
                 {
                     await context.Response.WriteAsync("Hello World!!!");
