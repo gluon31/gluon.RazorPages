@@ -26,17 +26,17 @@ namespace Gluon
 
             // Add Middleware: must come before UseRouting.
             app.UseStaticFiles(); //Ã“IHTML, CSS, JS.... ‚ðŽÀs
-            // app.UseFileServer();
+            // app.UseFileServer(); //Šî–{•¶‘“o˜^
 
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!!!");
-                });
+                //endpoints.MapGet("/", async context =>
+                //{
+                //    await context.Response.WriteAsync("Hello World!!!");
+                //});
             });
         }
     }
