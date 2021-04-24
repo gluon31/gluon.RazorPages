@@ -5,7 +5,7 @@ VisualStudioVersion = 16.6.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gluon", "Gluon\Gluon.csproj", "{EBCA0CF6-FE8D-4DD8-9F52-42264AA06E86}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gluon.WebApp", "Gluon.WebApp\Gluon.WebApp.csproj", "{85B627E2-954C-4932-92D9-59A27071AEE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gluon.WebApp", "Gluon.WebApp\Gluon.WebApp.csproj", "{85B627E2-954C-4932-92D9-59A27071AEE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

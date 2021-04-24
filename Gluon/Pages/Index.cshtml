@@ -1,7 +1,5 @@
 @page
-
-@using Gluon.Models; 
-@using Gluon.Services;
+@inject PortfolioServiceJsonFile PortfolioService
  
 @*@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers*@
 
@@ -30,7 +28,7 @@
     //    },
     //};
 
-    var portfolios = (new PortfolioServiceJsonFile()).GetPortfolios();
+    var portfolios = PortfolioService.GetPortfolios();
 
 }
 
